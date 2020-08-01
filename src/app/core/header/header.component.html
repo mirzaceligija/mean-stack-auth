@@ -1,0 +1,13 @@
+<p>
+    <mat-toolbar color="primary">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+        </button>
+        <span>Authentication</span>
+        <span class="spacer"></span>
+        <button mat-button *ngIf="userIsAuthenticated" routerLink="/" routerLinkActive="mat-accent"> Profile </button>
+        <button mat-button *ngIf="!userIsAuthenticated" routerLink="/login" routerLinkActive="mat-accent"> Login </button>
+        <button mat-button *ngIf="!userIsAuthenticated" routerLink="/register" routerLinkActive="mat-accent"> Register </button>
+        <button mat-raised-button color="accent" *ngIf="userIsAuthenticated" (click)="onSignOut()"> LogOut </button>
+    </mat-toolbar>
+</p>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './core/authentication/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'mean-stack-auth';
+  
+  constructor(private authService: AuthService){}
+
+  ngOnInit(): void {
+    this.authService.autoAuthUser();
+  }
+
 }

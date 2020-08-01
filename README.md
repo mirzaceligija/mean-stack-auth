@@ -1,3 +1,13 @@
+Implementation os complete login and registration with confirmation link using MEAN stack & SendGrid package
+Please change the following things to make this app works:
+In server/config/settings.json change your SENDGRID_API_KEY
+In server/controllers/user.js replace ---> from: "YOUR_EMAIL@EMAIL.COM" to your sendgrid email
+
+ng serve
+cd server -> nodemon start
+
+Make sure your database is working properly!
+
 # MeanStackAuth
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.

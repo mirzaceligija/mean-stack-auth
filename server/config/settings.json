@@ -1,0 +1,7 @@
+{
+    "env": {
+        "JWT_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9Secret",
+        "SENDGRID_API_KEY": "YOUR_SENDGRID_API_KEY",
+        "DATABASE": "mongodb://localhost/mean-stack-auth"
+    }
+}
